@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: seaplane.api
+Version: 0.0.16b1
+Summary: Carrier API
+Home-page: 
+Author: Seaplane IO, Inc.
+Author-email: support@seaplane.io
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Carrier API
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3 >=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic <2,>=1.10.5
+Requires-Dist: aenum
+
+    **Seaplane Global Messaging Service**  For information about authentication see [authentication](/docs/authentication)   # noqa: E501
+    

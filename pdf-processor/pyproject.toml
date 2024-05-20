@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pdf-processor"
+version = "0.0.1"
+description = ""
+authors = []
+
+[tool.seaplane]
+main = "main.py"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+seaplane = "0.6.12"
+pdfminer-six = "^20231228"
+pymupdf = "^1.24.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

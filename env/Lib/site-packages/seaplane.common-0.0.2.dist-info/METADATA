@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: seaplane.common
+Version: 0.0.2
+Home-page: 
+Author: Seaplane IO, Inc.
+Author-email: support@seaplane.io
+License: Apache 2.0
+Keywords: Seaplane,Common
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: urllib3 >=1.25.3
+

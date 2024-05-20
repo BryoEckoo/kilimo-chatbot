@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "chatbot"
+version = "0.0.2"
+description = ""
+authors = []
+
+[tool.seaplane]
+main = "main.py"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+langchain = "^0.0.292"
+seaplane = "^0.6.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

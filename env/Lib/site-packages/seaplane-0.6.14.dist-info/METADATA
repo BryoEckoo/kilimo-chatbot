@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: seaplane
+Version: 0.6.14
+Summary: Seaplane Python SDK
+Home-page: https://github.com/seaplane-io/seaplane/tree/main/seaplane-sdk/python
+License: Apache License
+Author: Seaplane IO, Inc.
+Requires-Python: >=3.10,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: attrs (>=22.2.0,<23.0.0)
+Requires-Dist: certifi (>=2022.6.15,<2023.0.0)
+Requires-Dist: charset-normalizer (>=2.1.0,<3.0.0)
+Requires-Dist: cookiecutter (>=2.1.1,<3.0.0)
+Requires-Dist: idna (>=3.3,<4.0)
+Requires-Dist: nats-py (>=2.4.0,<3.0.0)
+Requires-Dist: packaging (>=23,<24)
+Requires-Dist: py (>=1.11.0,<2.0.0)
+Requires-Dist: pyparsing (>=3.0.9,<4.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: python-on-whales (>=0.71.0,<0.72.0)
+Requires-Dist: qdrant-client (==1.8.2)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: requests-mock (>=1.9.3,<2.0.0)
+Requires-Dist: seaplane-api (>=0.0.16b1,<0.0.17)
+Requires-Dist: seaplane-cli (>=0.0.22b1,<0.0.23)
+Requires-Dist: seaplane-common (>=0.0.2,<0.0.3)
+Requires-Dist: seaplane-framework-flow (>=0.0.4,<0.0.5)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: types-PyYAML (>=6.0.12.20240311,<7.0.0.0)
+Requires-Dist: types-requests (>=2.28.0,<3.0.0)
+Requires-Dist: types-tabulate (>=0.9.0.3,<0.10.0.0)
+Requires-Dist: types-toml (>=0.10.8.6,<0.11.0.0)
+Requires-Dist: urllib3 (>=1.26.16,<2.0.0)
+Project-URL: Documentation, https://github.com/seaplane-io/seaplane/tree/main/seaplane-sdk/python
+Project-URL: Repository, https://github.com/seaplane-io/seaplane/tree/main/seaplane-sdk/python
+Description-Content-Type: text/markdown
+
+# Seaplane Python SDK
+
+A library for developing and deploying your applications to the Seaplane Infrastructure.
+
+See the [Seaplane Quick-Start Guide](https://developers.seaplane.io/docs/quick-start) for
+details about how to get going with building and deploying Seaplane applications.
+
+## License
+
+Licensed under the Apache License, Version 2.0, [LICENSE]. Copyright 2022 Seaplane IO, Inc.
+
+[//]: # (Links)
+
+[LICENSE]: https://github.com/seaplane-io/seaplane/blob/main/LICENSE
+

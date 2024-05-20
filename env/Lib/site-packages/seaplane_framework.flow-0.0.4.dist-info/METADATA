@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: seaplane-framework.flow
+Version: 0.0.4
+Author: Seaplane.IO
+Author-email: carrier-eng@seaplane.io
+License: Apache Software License
+License-File: LICENSE
+Requires-Dist: msgpack (>=1.0.5)
+
