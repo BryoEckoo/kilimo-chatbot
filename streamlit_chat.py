@@ -51,21 +51,25 @@ st.markdown(
     }
     /* dec */
     .description{
-        background-color:#075e54;
+        background-color:transparent;
         width:700px;
         height:95vh;
-        transform: translate(0%, -10%); 
+        transform: translate(20%, -10%); 
         position:fixed;
         z-index:1;
         right:0;
         top:16%;
         border-radius:20px;
     }
-    .description img{
-    display:flex;
-    width:700px;
-    height:400px;
+    .description #emblem{
+    height:300px;
+    margin-top:10px;
     }
+    .description img{
+        display:flex;
+        width:500px;
+        height:390px;
+        }
     .st-emotion-cache-1jicfl2 {
         width: 100%;
         padding: 2rem;
@@ -271,7 +275,7 @@ if prompt:
 st.markdown(
     '<div class="description" style="color: black; text-align:center;">'
     '<img src="https://www.africaceovoices.com/wp-content/uploads/2020/12/AGRICULTURE.jpg" alt="Image Description">'
-    '<img  src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Coat_of_arms_of_Kenya_%28Official%29.svg" alt="Image Description">',
+    '<img  id="emblem" src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Coat_of_arms_of_Kenya_%28Official%29.svg" alt="Image Description">',
     unsafe_allow_html=True
 )
 
