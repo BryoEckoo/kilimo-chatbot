@@ -3,10 +3,10 @@ import os
 import time
 import requests
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
+# load_dotenv()
 
 # Retrieve API key from environment variables
 API_KEY = os.getenv("SEAPLANE_API_KEY")
