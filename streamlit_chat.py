@@ -65,6 +65,13 @@ st.markdown(
     height:300px;
     margin-top:10px;
     }
+    .description #bot{
+        position:absolute;
+        left:-60%;
+        top:12%;
+        width:50px;
+        height:50px;
+    }
     .description img{
         display:flex;
         width:500px;
@@ -175,7 +182,7 @@ if "messages" not in st.session_state:
             "content": (
                 "Welcome to the Kilimo chatbot. I can answer any questions you have about the"
                 " information on https://kilimo.go.ke/ but I am still an AI so make sure to check"
-                " the details in the linked documents"
+                " the details in the linked documents 😄"
             ),
         }
     )
@@ -275,7 +282,8 @@ if prompt:
 st.markdown(
     '<div class="description" style="color: black; text-align:center;">'
     '<img src="https://www.africaceovoices.com/wp-content/uploads/2020/12/AGRICULTURE.jpg" alt="Image Description">'
-    '<img  id="emblem" src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Coat_of_arms_of_Kenya_%28Official%29.svg" alt="Image Description">',
+    '<img id="bot" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*zKAk0CswWEQQiQXH.png" alt="Image Description">'
+    '<img  id="emblem" src="https://www.povertyactionlab.org/sites/default/files/styles/full_width_medium_cropped/public/images/2023/02/Kenya_NeilPalmer_Flickr_Farmeratwork_2010_0.jpg?itok=YR4syGqm" alt="Image Description">',
     unsafe_allow_html=True
 )
 
