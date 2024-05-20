@@ -67,7 +67,7 @@ st.markdown(
     }
     .description #bot{
         position:absolute;
-        left:-60%;
+        left:-50%;
         top:12%;
         width:50px;
         height:50px;
