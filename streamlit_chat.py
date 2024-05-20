@@ -9,7 +9,7 @@ import streamlit as st
 # load_dotenv()
 
 # Retrieve API key from environment variables
-API_KEY = os.getenv("SEAPLANE_API_KEY")
+API_KEY = "sp-fSyXYQpihYZZsHtB_tpDXw"
 
 # Define the main structure of the page
 st.set_page_config(layout="wide")
