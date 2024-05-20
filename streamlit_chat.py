@@ -3,10 +3,10 @@ import os
 import time
 import requests
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
+# load_dotenv()
 
 # Retrieve API key from environment variables
 API_KEY = os.getenv("SEAPLANE_API_KEY")
@@ -17,11 +17,54 @@ st.markdown(
     """
     <style>
     #MainMenu {visibility: hidden;}
+
+    
+   .st-emotion-cache-1629p8f h1{
+        transform: translate(15%, 0%); 
+   }
+
+   /* welcome text */
+    .st-emotion-cache-4oy321{
+        width:800px;
+        padding:1rem;
+        left:0;
+        transform: translate(0%, 20%); 
+    }
+
+    /* chat/text input */
+    .st-emotion-cache-qdbtli {
+        transform: translate(-60%, 0%);
+        width: 600px;
+        left:5%;
+        z-index:-1;
+    }
+    /* user input-result */
+    .st-emotion-cache-1c7y2kd{
+        transform: translate(1%, 10%);
+        padding:1rem;
+        width:50%; 
+    }
+
+    .right{
+    position:absolute;
+    width:200px;
+    }
+    /* dec */
+    .description{
+        background-color:;
+        width:700px;
+        height:95vh;
+        transform: translate(0%, -10%); 
+        position:fixed;
+        z-index:1;
+        right:0;
+        top:16%;
+        border-radius:20px;
+    }
     .st-emotion-cache-1jicfl2 {
         width: 100%;
         padding: 2rem;
-        min-width: auto;
-        max-width: initial;
+        width:500px;
         height: 100vh;
     }
     .footer {
@@ -219,40 +262,43 @@ if prompt:
         {"role": "assistant", "content": combined_response}
     )
 
-# Define the layout of the two columns
-# col1, col2 = st.columns(2)
 
-# # Left column: Chat UI
-# with col1:
-#     st.markdown('<div class="left">', unsafe_allow_html=True)
-#     st.markdown('</div>', unsafe_allow_html=True)
+st.markdown(
+    '<div class="description" style="color: black; text-align:center;">'
+    '<h3 style="border:1px solid white; border-radius: .5em;">Feed & News</h3>'
+    '<p>hello</p></div>', 
+    unsafe_allow_html=True
+)
 
-# # Right column: Feed & News
-# with col2:
-#     st.markdown(
-#         '<div class="right" style="background-color:#0d1117;">', 
-#         unsafe_allow_html=True
-#     )
-#     st.markdown(
-#         '<div class="description" style="color: black; text-align:center;">'
-#         '<h3 style="border:1px solid white; border-radius: .5em;">Feed & News</h3></div>', 
-#         unsafe_allow_html=True
-#     )
-#     st.markdown(
-#         """
-#         <div class="image-container">
-#             <img src="https://img.freepik.com/premium-photo/falling-coffee-beans-dark-with-copy-space_88281-1264.jpg?w=360" width="790">
-#         </div>
-#         """,
-#         unsafe_allow_html=True
-#     )
-#     st.markdown(
-#         '<p class="ai-footer">'
-#         'The future of farming support, empowered by AI.</p>', 
-#         unsafe_allow_html=True
-#     )
-#     st.markdown(
-#         '<div class="footer" style="color: black;">Scroll for More</div>', 
-#         unsafe_allow_html=True
-#     )
-#     st.markdown('</div>', unsafe_allow_html=True)
+
+# with st.container():
+#     st.title("Home Page")
+#     st.write("Welcome to the home page!")
+
+# st.markdown(
+#     '<div class="right" style="background-color:#0d1117;">', 
+#     unsafe_allow_html=True
+# )
+# st.markdown(
+#     '<div class="description" style="color: black; text-align:center;">'
+#     '<h3 style="border:1px solid white; border-radius: .5em;">Feed & News</h3></div>', 
+#     unsafe_allow_html=True
+# )
+# # st.markdown(
+# #     """
+# #     <div class="image-container">
+# #         <img src="https://img.freepik.com/premium-photo/falling-coffee-beans-dark-with-copy-space_88281-1264.jpg?w=360" width="790">
+# #     </div>
+# #     """,
+# #     unsafe_allow_html=True
+# # )
+# st.markdown(
+#     '<p class="ai-footer">'
+#     'The future of farming support, empowered by AI.</p>', 
+#     unsafe_allow_html=True
+# )
+# st.markdown(
+#     '<div class="footer" style="color: black;">Scroll for More</div>', 
+#     unsafe_allow_html=True
+# )
+# st.markdown('</div>', unsafe_allow_html=True)
