@@ -3,10 +3,10 @@ import os
 import time
 import requests
 import streamlit as st
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 # Load environment variables from .env file
-# load_dotenv()
+load_dotenv()
 
 # Retrieve API key from environment variables
 API_KEY = os.getenv("SEAPLANE_API_KEY")
@@ -51,7 +51,7 @@ st.markdown(
     }
     /* dec */
     .description{
-        background-color:;
+        background-color:#075e54;
         width:700px;
         height:95vh;
         transform: translate(0%, -10%); 
@@ -60,6 +60,11 @@ st.markdown(
         right:0;
         top:16%;
         border-radius:20px;
+    }
+    .description img{
+    display:flex;
+    width:700px;
+    height:400px;
     }
     .st-emotion-cache-1jicfl2 {
         width: 100%;
@@ -265,8 +270,8 @@ if prompt:
 
 st.markdown(
     '<div class="description" style="color: black; text-align:center;">'
-    '<h3 style="border:1px solid white; border-radius: .5em;">Feed & News</h3>'
-    '<p>hello</p></div>', 
+    '<img src="https://www.africaceovoices.com/wp-content/uploads/2020/12/AGRICULTURE.jpg" alt="Image Description">'
+    '<img  src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Coat_of_arms_of_Kenya_%28Official%29.svg" alt="Image Description">',
     unsafe_allow_html=True
 )
 
