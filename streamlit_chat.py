@@ -282,7 +282,6 @@ if prompt:
 st.markdown(
     '<div class="description" style="color: black; text-align:center;">'
     '<img src="https://www.africaceovoices.com/wp-content/uploads/2020/12/AGRICULTURE.jpg" alt="Image Description">'
-    '<img id="bot" src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*zKAk0CswWEQQiQXH.png" alt="Image Description">'
     '<img  id="emblem" src="https://www.povertyactionlab.org/sites/default/files/styles/full_width_medium_cropped/public/images/2023/02/Kenya_NeilPalmer_Flickr_Farmeratwork_2010_0.jpg?itok=YR4syGqm" alt="Image Description">',
     unsafe_allow_html=True
 )
