@@ -18,7 +18,6 @@ st.markdown(
     <style>
     #MainMenu {visibility: hidden;}
 
-    
    .st-emotion-cache-1629p8f h1{
         transform: translate(15%, 0%); 
    }
@@ -62,20 +61,14 @@ st.markdown(
         border-radius:20px;
     }
     .description #emblem{
-    height:300px;
-    margin-top:10px;
-    }
-    .description #bot{
-        position:absolute;
-        left:-50%;
-        top:12%;
-        width:50px;
-        height:50px;
+        transform:translate(0%, 110%);
     }
     .description img{
         display:flex;
-        width:500px;
-        height:390px;
+        width:533px;
+        height:300px;
+        scale:1.1;
+        padding-right:10px;
         }
     .st-emotion-cache-1jicfl2 {
         width: 100%;
@@ -281,8 +274,25 @@ if prompt:
 
 st.markdown(
     '<div class="description" style="color: black; text-align:center;">'
-    '<img src="https://www.africaceovoices.com/wp-content/uploads/2020/12/AGRICULTURE.jpg" alt="Image Description">'
-    '<img  id="emblem" src="https://www.povertyactionlab.org/sites/default/files/styles/full_width_medium_cropped/public/images/2023/02/Kenya_NeilPalmer_Flickr_Farmeratwork_2010_0.jpg?itok=YR4syGqm" alt="Image Description">',
+    '<img src="https://www.africaceovoices.com/wp-content/uploads/2020/12/AGRICULTURE.jpg" alt="Image Description">',
+    # 'st.title("hello")'
+    # '<img  id="emblem" src="https://www.povertyactionlab.org/sites/default/files/styles/full_width_medium_cropped/public/images/2023/02/Kenya_NeilPalmer_Flickr_Farmeratwork_2010_0.jpg?itok=YR4syGqm" alt="Image Description">',
+    unsafe_allow_html=True
+)
+st.markdown(
+    """
+    <div class="description">
+        <img id="emblem" src="https://www.povertyactionlab.org/sites/default/files/styles/full_width_medium_cropped/public/images/2023/02/Kenya_NeilPalmer_Flickr_Farmeratwork_2010_0.jpg?itok=YR4syGqm">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+st.markdown(
+    """
+    <div class="description">
+        <img id="drone" src="https://www.africaceovoices.com/wp-content/uploads/2020/12/AGRICULTURE.jpg">
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
