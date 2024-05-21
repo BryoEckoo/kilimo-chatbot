@@ -60,8 +60,10 @@ st.markdown(
         top:16%;
         border-radius:20px;
     }
+
     .description #emblem{
-        transform:translate(0%, 110%);
+    position:absolute;
+        transform:translate(0%,110%);
     }
     .description img{
         display:flex;
@@ -295,6 +297,15 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+st.markdown(
+    """
+    <div class="description">
+        <img id="emblem" src="https://www.povertyactionlab.org/sites/default/files/styles/full_width_medium_cropped/public/images/2023/02/Kenya_NeilPalmer_Flickr_Farmeratwork_2010_0.jpg?itok=YR4syGqm">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 
 # with st.container():
